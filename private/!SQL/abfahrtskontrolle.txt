@@ -1,0 +1,10 @@
+CREATE TABLE `abfahrtskontrolle` (
+  `id` char(23) NOT NULL,
+  `username` varchar(65) NOT NULL DEFAULT '',
+`Lasi` boolean,
+`Fhzg` boolean,
+`Anh` boolean,
+  `mod_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

@@ -1,0 +1,59 @@
+/*
+Hamann BLAU:    #1761A3
+Hamann ORANGE:  #E56F15
+Black_NotBlack: #222222
+
+
+
+*/
+/* Style the buttons that are used to open and close the accordion panel */
+table.full {
+	width:100%;
+	text-align:center;
+}
+button.accordion {
+    background-color: #E56F15;
+    color: #FFF;
+    cursor: pointer;
+    padding: 20px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+	font-weight:700;
+}
+
+input.full {
+	width:100%;
+}
+select.full {
+	width:100%;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+button.accordion.active, button.accordion:hover {
+    background-color: #1761A3;
+	
+}
+
+/* Style the accordion panel. Note: hidden by default */
+div.panel {
+    padding: 0 30px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+	width:100%;
+}
+button.accordion:after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: #FFF;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}

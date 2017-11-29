@@ -1,0 +1,9 @@
+CREATE TABLE `symrisebestand` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(65) NOT NULL DEFAULT '',
+`quant` Integer,
+  `mod_timestamp` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+`Datum` date,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `id_UNIQUE` (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
